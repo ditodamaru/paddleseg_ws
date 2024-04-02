@@ -21,11 +21,12 @@ train_dataset:
   mode: train
 
 model:
-  type: FCN
+  type: UPerNet #FCN
   backbone:
-    #type: ResNet50
-    type : STDC1
-    pretrained: https://bj.bcebos.com/paddleseg/dygraph/PP_STDCNet1.tar.gz #https://paddle-hapi.bj.bcebos.com/models/resnet50.pdparams
+    #type: HRNet_W18 #ResNet50
+    #type : #STDC2
+    #pretrained: #https://bj.bcebos.com/paddleseg/dygraph/PP_STDCNet2.tar.gz #https://paddle-hapi.bj.bcebos.com/models/resnet50.pdparams
+    #pretrained : https://paddle-hapi.bj.bcebos.com/models/resnet50.pdparams
   num_classes: 4 #16
   pretrained: Null
   backbone_indices: [-1]
